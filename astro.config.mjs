@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://owenshaupt.github.io',
-	base: '/xyz',
+	base: '/xyz', // this eventually goes away
 	integrations: [mdx(), sitemap()],
 });
