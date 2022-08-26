@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://owenshaupt.github.io',
+	site: 'https://www.personal.effects.xyz',
 	integrations: [mdx(), sitemap()],
 });
