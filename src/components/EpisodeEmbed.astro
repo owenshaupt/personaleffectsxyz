@@ -1,0 +1,36 @@
+---
+export interface Props {
+	embedSrc: string;
+	episodeName: string;
+	episodeUrl: string;
+	PODCAST_NAME: string;
+	PODCAST_URL: string;
+}
+
+const {
+	embedSrc,
+	episodeName,
+	episodeUrl,
+	PODCAST_NAME,
+	PODCAST_URL
+} = Astro.props as Props;
+---
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+	src={embedSrc}></iframe>
+<div
+	style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif; font-weight: 100;">
+	<a href={PODCAST_URL} title={PODCAST_NAME} target="_blank"
+		style="color: #cccccc; text-decoration: none;">{PODCAST_NAME}</a> · <a
+		href={episodeUrl} title={episodeName} target="_blank"
+		style="color: #cccccc; text-decoration: none;">{episodeName}</a></div>
+<style>
+	a {
+		display: inline-block;
+		text-decoration: none;
+	}
+	a.active {
+		font-weight: bolder;
+		text-decoration: underline;
+	}
+</style>
