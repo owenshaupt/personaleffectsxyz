@@ -3,3 +3,5 @@
 
 export const SITE_TITLE = 'Personal Effects';
 export const SITE_DESCRIPTION = 'Personal Effects';
+export const PODCAST_NAME = 'Personal Effects';
+export const PODCAST_URL = 'https://soundcloud.com/personal-effects';
