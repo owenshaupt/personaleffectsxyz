@@ -26,7 +26,7 @@ const uploadFile = async () => {
 	try {
 		const res = await drive.files.create({
 			requestBody: {
-				name: 'test.txt',
+				name: '001-20220831-123456.txt',
 				mimeType: 'text/plain',
 				parents: [ '1J4uZUauP8gVsFV46w57QEOsKPbYOukRN' ],
 			},

@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import VoicemailContainer from '../components/VoicemailContainer.tsx';
+---
+
+<script>
+	
+</script>
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Call Us on Our Cellphone!</h1>
+			<p>
+				Thanks for visiting, listening, and all the ings! Use this page to leave us voicemail, and we might play it and respond on the show!
+			</p>
+			<VoicemailContainer client:load />
+		</main>
+		<Footer />
+	</body>
+</html>
